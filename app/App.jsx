@@ -13,9 +13,17 @@ import{
 } from 'react-native'
  
 function App() {
+
+  const[tasks, setTasks] = useState
+  ([
+    'Do Laundry',
+    'Go To Gym',
+    'Walk Dog'
+  ]);
+
   return (
     <SafeAreaView>
-      <ToDoList />
+      <ToDoList tasks ={tasks} />
       <ToDoForm />
     </SafeAreaView>
   );
